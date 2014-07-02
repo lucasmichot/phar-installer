@@ -10,27 +10,19 @@
 	"phars": {
 		"3.7": {
 			"url": "https://phar.phpunit.de/phpunit-lts.phar",
-			"sha1": "6eee1c707a3511a9326cb545a569e6870e116820",
-			"beta": false,
-			"alpha": false
+			"sha1": "6eee1c707a3511a9326cb545a569e6870e116820"
 		},
 		"4.1": {
 			"url": "https://phar.phpunit.de/phpunit.phar",
-			"sha1": "3975a93e0b3bdc0a7b61be2f36f50ee5c7d26c1d",
-			"beta": false,
-			"alpha": false
+			"sha1": "3975a93e0b3bdc0a7b61be2f36f50ee5c7d26c1d"
 		},
 		"4.2": {
 			"url": "https://phar.phpunit.de/phpunit-beta.phar",
-			"sha1": "ee2ca76f814e776ba36dd110dedb116a08f6f4ad",
-			"beta": false,
-			"alpha": false
+			"sha1": "ee2ca76f814e776ba36dd110dedb116a08f6f4ad"
 		},
 		"4.3": {
 			"url": "https://phar.phpunit.de/phpunit-alpha.phar",
-			"sha1": "2d5db127c88f099e6bcc0f93eee22ce4b854506d",
-			"beta": false,
-			"alpha": false
+			"sha1": "2d5db127c88f099e6bcc0f93eee22ce4b854506d"
 		}
 	}
 }
