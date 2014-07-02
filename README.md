@@ -1,4 +1,4 @@
-phar-installer
+PHAR installer
 ==============
 
 Central repository for PHAR
