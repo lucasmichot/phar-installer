@@ -10,9 +10,9 @@ Homebrew-PHP is fantastic taps to handle commpiled binaries, but as there is a g
 
 ## Table of contents
 
-* Installation
-* Usage
-* Referencing PHARS
+* [Installation](#installation)
+* [Usage](#usage)
+* [Referencing PHARs](#referencing-phars)
 
 ## Installation
 
@@ -94,7 +94,7 @@ Go to the homepage of a PHAR.
 pharin home <phar-name>
 ```
 
-## Referencing PHAR
+## Referencing PHARs
 
 PHAR referencing can be achieved in two different ways.
 * You can create a pull-request with details informations about the PHAR, the name, the URL, and add entries for each versions
