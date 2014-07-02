@@ -53,10 +53,10 @@ Upgrade a PHARs to their latest stable versions.
 pharin upgrade <phar-name>
 ```
 
-Display outdated PHARs versions.
+Display outdated PHARs.
 
 ```sh
-pharin upgrade <phar-name>
+pharin outdated <phar-name>
 ```
 
 Display all available versions for a PHAR.
@@ -71,3 +71,8 @@ Go to the homepage of a PHAR.
 pharin home <phar-name>
 ```
 
+## Referencing PHAR
+
+PHAR referencing can be achieved in two different ways.
+* You can create a pull-request with details informations about the PHAR, the name, the URL, and add entries for each versions
+* You can also provide a minimum JSON file including only the name an the website. `pharin` will then check `http://exemple.com/pharin.json` that will contains the full details of PHAR versions.
