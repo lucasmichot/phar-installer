@@ -1,13 +1,31 @@
 #!/usr/bin/env php
 <?php
 
+if (PHP_SAPI !== 'cli')
+{
+    echo 'Warning: Pharin should be invoked via the CLI version of PHP, not the '.PHP_SAPI.' SAPI'.PHP_EOL;
+}
+
 require __DIR__.'/../vendor/autoload.php';
 
-use Symfony\Component\Console\Application;
 use Pharin\Commands;
+use Pharin\Console\Application;
+
+error_reporting(- 1);
 
 $application = new Application('Pharin', '@package_version@');
-$application->add(new Commands\HelloCommand());
+
+$application->add(new Commands\AboutCommand());
+$application->add(new Commands\HomeCommand());
+$application->add(new Commands\InstallCommand());
+$application->add(new Commands\InstalledCommand());
+$application->add(new Commands\OutdatedCommand());
+$application->add(new Commands\RemoveCommand());
+$application->add(new Commands\SearchCommand());
 $application->add(new Commands\SelfUpdateCommand());
+$application->add(new Commands\SelfUpdateUndashedCommand());
+$application->add(new Commands\UpdateCommand());
+$application->add(new Commands\UpgradeCommand());
+$application->add(new Commands\VersionsCommand());
 
 $application->run();

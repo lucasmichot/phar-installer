@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "37e2eab235788c4a1fd6260a8aa4bee9",
+    "hash": "16093f3a9cb1cf762c7961e12ed411cc",
     "packages": [
         {
             "name": "herrera-io/json",
@@ -124,6 +124,50 @@
                 "update"
             ],
             "time": "2013-10-30 17:23:01"
+        },
+        {
+            "name": "illuminate/console",
+            "version": "v4.2.6",
+            "target-dir": "Illuminate/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/console.git",
+                "reference": "5cdcbc892204a3c6c8257dd20d9015034fb80f5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/5cdcbc892204a3c6c8257dd20d9015034fb80f5a",
+                "reference": "5cdcbc892204a3c6c8257dd20d9015034fb80f5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/console": "2.5.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Console": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Creator of Laravel"
+                }
+            ],
+            "time": "2014-06-28 21:17:16"
         },
         {
             "name": "justinrainbow/json-schema",

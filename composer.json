@@ -3,7 +3,7 @@
 	"description": "PHAR installer",
 	"license": "MIT",
 	"require": {
-		"symfony/console": "~2.5",
+		"illuminate/console": "~4.2",
 		"herrera-io/phar-update": "~1.0"
 	},
 	"autoload": {
