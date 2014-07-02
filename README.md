@@ -16,9 +16,20 @@ Homebrew-PHP is fantastic taps to handle commpiled binaries, but as there is a g
 
 ## Installation
 
+Installation can be achieved many ways:
+
+Download and install `pahrin.phar`
+
 ```sh
 curl -sS http://<domain>/installer | php
 mv pharin.phar /usr/local/bin/pharin
+```
+
+Install via Homebrew
+
+```sh
+brew update
+brew install php/pharin
 ```
 
 ## Usage
