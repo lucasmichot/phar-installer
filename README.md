@@ -1,5 +1,7 @@
 # PHAR installer
 
+## ** Still in early development ** do not use or install at the moment
+
 Central repository for PHAR packages.
 
 The initial idea of this project came from the following Homebrew-PHP PR :
