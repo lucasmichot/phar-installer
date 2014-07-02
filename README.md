@@ -1,5 +1,4 @@
-PHAR installer
-==============
+# PHAR installer
 
 Central repository for PHAR packages.
 
@@ -9,7 +8,20 @@ The initial idea of this project came from the following Homebrew-PHP PR :
 
 Homebrew-PHP is fantastic taps to handle commpiled binaries, but as there is a growing numbers of PHP CLI applciations, the need of simple tool to install versionned PHARs and utilities came.
 
-Usage
+## Table of contents
+
+* Installation
+* Usage
+* Referencing PHARS
+
+## Installation
+
+```sh
+curl -sS http://<domain>/installer | php
+mv pharin.phar /usr/local/bin/pharin
+``
+
+## Usage
 
 Search for PHARs
 
