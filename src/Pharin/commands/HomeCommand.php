@@ -19,7 +19,7 @@ class HomeCommand extends Command
      */
     public function fire()
     {
-        $this->line('toto');
+        shell_exec ('open http://phpunit.de');
     }
 
 } 

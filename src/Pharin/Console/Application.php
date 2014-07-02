@@ -10,6 +10,21 @@ class Application extends IlluminateApplication
     /**
      * {@inheritdoc}
      */
+    public function boot()
+    {
+        // ensure folders are set
+        $home = getenv('HOME');
+        mkdir($home."/.pharin");
+        mkdir($home."/.pharin/cache");
+        mkdir($home."/.pharin/phars");
+
+        // boot the application
+        return parent::boot();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     protected function getDefaultInputDefinition()
     {
         return new InputDefinition(array(

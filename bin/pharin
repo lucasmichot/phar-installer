@@ -13,6 +13,13 @@ use Pharin\Console\Application;
 
 error_reporting(- 1);
 
+
+/**
+ * Initalize folders
+ */
+
+
+
 $application = new Application('Pharin', '@package_version@');
 
 $application->add(new Commands\AboutCommand());
