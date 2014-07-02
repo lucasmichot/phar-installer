@@ -19,7 +19,7 @@ Homebrew-PHP is fantastic taps to handle commpiled binaries, but as there is a g
 ```sh
 curl -sS http://<domain>/installer | php
 mv pharin.phar /usr/local/bin/pharin
-``
+```
 
 ## Usage
 
