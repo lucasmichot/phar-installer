@@ -1,6 +1,7 @@
 # PHAR installer
 
-## ** Still in early development ** do not use or install at the moment
+## ** Still in early development ** 
+do not use or install at the moment
 
 Central repository for PHAR packages.
 
