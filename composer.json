@@ -4,7 +4,11 @@
 	"license": "MIT",
 	"require": {
 		"illuminate/console": "~4.2",
-		"herrera-io/phar-update": "~1.0"
+		"illuminate/support": "~4.2",
+		"symfony/filesystem": "~2.5",
+		"symfony/finder": "~2.5",
+		"herrera-io/phar-update": "~1.0",
+		"guzzlehttp/guzzle": "4.*"
 	},
 	"autoload": {
 		"psr-0": {

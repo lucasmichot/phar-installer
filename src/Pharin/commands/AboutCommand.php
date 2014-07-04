@@ -20,7 +20,15 @@ class AboutCommand extends Command
     public function fire()
     {
         $this->info('Pharin - A PHAR manager');
-        $this->comment('See http://lucasmichot.github.io/pahrin for more information.');
+        $this->comment($this->getHelp());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getHelp()
+    {
+        return 'See http://lucasmichot.github.io/pahrin for more information.';
     }
 
 } 

@@ -2,9 +2,8 @@
 
 use Herrera\Phar\Update\Manager;
 use Herrera\Phar\Update\Manifest;
-use Illuminate\Console\Command;
 
-class SelfUpdateCommand extends Command
+class SelfUpdateCommand extends BaseCommand
 {
     const MANIFEST_FILE = 'http://lucasmichot.github.io/pharin/manifest.json';
 
@@ -17,6 +16,16 @@ class SelfUpdateCommand extends Command
      * {@inheritdoc}
      */
     protected $description = 'Updates pharin.phar to the latest version.';
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __construct()
+    {
+        parent::__construct($this->name);
+
+        $this->setAliases(['selfupdate']);
+    }
 
     /**
      * {@inheritdoc}

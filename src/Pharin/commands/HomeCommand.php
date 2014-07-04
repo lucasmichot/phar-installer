@@ -1,8 +1,8 @@
 <?php namespace Pharin\Commands;
 
-use Illuminate\Console\Command;
+use Symfony\Component\Console\Input\InputArgument;
 
-class HomeCommand extends Command
+class HomeCommand extends BaseCommand
 {
     /**
      * {@inheritdoc}
@@ -17,9 +17,27 @@ class HomeCommand extends Command
     /**
      * {@inheritdoc}
      */
+    protected function getArguments()
+    {
+        return array(
+            array('phar-name', InputArgument::REQUIRED, 'The name of the PHAR.'),
+        );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getHelp()
+    {
+       return 'The phar-name parameter must be an existing and referenced PHAR.';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function fire()
     {
-        shell_exec ('open http://phpunit.de');
+        //shell_exec('open http://phpunit.de');
     }
 
 } 
